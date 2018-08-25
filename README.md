@@ -17,7 +17,7 @@ Javadoc documentation is also available in the doc folder.
 
 Do not modify the starter code except where the comments explicitly tell you to add your own code.
 
-#Getting Started
+# Getting Started
 We will be using IntelliJ and Github in cs514. IntelliJ is an Integrated Development Environment (IDE). IDE is a piece of software that makes developing code easier: it contains an editor that provides clever code completion, a debugger, refactoring tools, and build automation tools.
 
 Download [IntelliJ here]https://www.jetbrains.com/idea/download/). Select the Community edition (it's free).
@@ -29,7 +29,7 @@ Now you can clone the starter code from github repo and open it in IntelliJ. In 
 Once you clone the skeleton code to IntelliJ, you can fill in the code in the provided Java classes and run each class to test if your methods work correctly. Once you complete some methods, you need to commit your changes and push them to your github repository by the deadline. I recommend commiting and pushing frequently.
 Please note that unless the code is in your github repo by the deadline, you will not be able to get any credit for it.
 
-#Academic Dishonesty
+# Academic Dishonesty
 Any work you submit is expected to be your own original work. You will get a 0 on the assignment if you copy & modify code from the web, or if your solution is similar to that of any other student.
 
 
