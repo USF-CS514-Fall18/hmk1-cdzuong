@@ -1,7 +1,9 @@
 # Homework1
 Due Wednesday on August 29 by 11:59pm
 
-Use the following link to to create your private github repository for this assignment. 
+Use the following link to to create your private github repository for this assignment: 
+[homework1](https://classroom.github.com/a/ddRXr15n)
+
 The repository will be seeded with the skeleton code, test cases, and input files.
 
 In this homework, you will practice the following:
