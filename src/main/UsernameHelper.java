@@ -56,11 +56,11 @@ public class UsernameHelper {
 
         // letter in the middle (length/2) is uppercase
         // odd password
-        if ((password.length() / 2) % 2 == 1) {
+        if ((password.length() % 2) == 1) {
 
             betterPassword =
                     password.substring(0, password.length() / 2) +
-                            password.toUpperCase().charAt(password.length() / 2 + 1) +
+                            password.toUpperCase().charAt(password.length() / 2) +
                             password.substring((password.length() / 2 + 1));
 
         }
@@ -68,9 +68,9 @@ public class UsernameHelper {
         // even password
         else {
             betterPassword =
-                    password.substring(0, password.length() / 2 - 1) +
-                            password.toUpperCase().charAt(password.length() / 2) + password.toUpperCase().charAt((password.length() / 2) + 1) +
-                            password.substring(password.length() / 2 + 1);
+                    password.substring(0, (password.length() / 2) -1) +
+                            password.toUpperCase().charAt((password.length() / 2) - 1) + password.toUpperCase().charAt(password.length() / 2) +
+                            password.substring((password.length() / 2) + 1);
 
         }
 
@@ -88,6 +88,11 @@ public class UsernameHelper {
                 betterPassword = betterPassword.replace('i', '$');
                 betterPassword = betterPassword.replace('o', '$');
                 betterPassword = betterPassword.replace('u', '$');
+                betterPassword = betterPassword.replace('A', '$');
+                betterPassword = betterPassword.replace('E', '$');
+                betterPassword = betterPassword.replace('I', '$');
+                betterPassword = betterPassword.replace('O', '$');
+                betterPassword = betterPassword.replace('U', '$');
             }
         }
 
