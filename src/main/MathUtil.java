@@ -1,18 +1,21 @@
 package main;
 
-/** A class that contains a couple of useful mathematical
- *  functions.
- *  You may NOT modify method names, parameters, return types.
- *  Add your code only where the comment asks you
- *  to replace with your own code.
+/**
+ * A class that contains a couple of useful mathematical
+ * functions.
+ * You may NOT modify method names, parameters, return types.
+ * Add your code only where the comment asks you
+ * to replace with your own code.
  */
 public class MathUtil {
     public final static double EPS = 0.01;
 
-    /** Computes the distance between two points
+    /**
+     * Computes the distance between two points
      * defined by (x1, y1) and (x2, y2).
      * Use the distance formula from this source:
      * https://www.purplemath.com/modules/distform.htm
+     *
      * @param x1 x coordinate of the first point
      * @param y1 y coordinate of the first point
      * @param x2 x coordinate of the second point
@@ -22,27 +25,41 @@ public class MathUtil {
     public static double computeDistance(int x1, int y1, int x2, int y2) {
         //TODO: Replace with your code.
 
-        return 0;
+        int length = Math.abs(x2 - x1);
+        int height = Math.abs(y2 - y1);
+        double distance = Math.sqrt(Math.pow(length, 2) + Math.pow(height, 2));
+
+        return distance;
     }
 
-    /** Computes a sum of terms 1.0/2^i, where i
+    /**
+     * Computes a sum of terms 1.0/2^i, where i
      * goes from 1 to n (inclusive).
+     *
      * @param n the number of terms to include in the summation
      * @return the sum of the geometric series
      */
     public static double computeGeomSeries(int n) {
         //TODO: Replace with your code.
+        double sum = 0.0;
 
-        return 0;
+        for (int x = 1; x <= n; x++) {
+            sum += 1.0 / Math.pow(2, x);
+        }
+
+
+        return sum;
     }
 
-    /** Do not change this code. This is used to check
+    /**
+     * Do not change this code. This is used to check
      * if your answer is correct
-     * @param methodName the name of the method being tested
-     * @param studentRes result computed by your program
+     *
+     * @param methodName  the name of the method being tested
+     * @param studentRes  result computed by your program
      * @param expectedRes result that was expected
      * @return true if student's result matches expected result,
-     *         false otherwise.
+     * false otherwise.
      */
     public static boolean compareResults(String methodName,
                                          double studentRes,
